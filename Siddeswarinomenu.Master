@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Siddeswarinomenu.master.cs" Inherits="Siddeswari.Siddeswarinomenu" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+    <head runat="server">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Siddheswari Seva Charitable Trust</title>
+<!-- Bootstrap Css -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid header-section">
+  <div class="top-icons">
+    <div class="container"><img src="images/social-icons.png" border="0" usemap="#Map" />
+      <map name="Map">
+        <area shape="rect" coords="119,-4,154,31" href="#">
+        <area shape="rect" coords="81,-4,116,31" href="#">
+        <area shape="rect" coords="41,-4,76,31" href="#">
+        <area shape="rect" coords="2,-4,35,31" href="#">
+      </map>
+    </div>
+  </div>
+  <div class="container logo clearfix"> <img src="images/Sri_Siddheswari_Seva_Charitable_Trust_Logo.png" class="img-fluid float-left center-block">
+      <div> <asp:Label ID="lblmsg" Visible="false" runat="server" Text=""></asp:Label></div>
+  	<div class="float-right mt-5">
+          <asp:Button ID="Btnlogin" class="btn btn-primary"  runat="server" Text="Login" OnClick="Btnlogin_Click" /><%--<button class="btn btn-info"><i class="fas fa-user mr-1"></i> Login</button>--%> &nbsp;<asp:Button ID="Btnregistr" class="btn btn-primary"  runat="server" Text="Register" OnClick="Btnregistr_Click" /> <%--<button class="btn btn-info"><i class="fas fa-lock mr-1"></i> Register</button>--%>
+	<p class="pt-4 text-right">
+<a href="Contactus.aspx" runat="server" class="btn btn-outline-success">Contact Us Now</a></p></div>
+  </div>
+</div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <div class="container-fluid footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-12">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="SiddeswariHome.aspx">Home</a></li>
+          <li><a href="AboutUs.aspx">About Us</a></li>
+          <li><a href="Events.aspx">Events</a></li>
+          <li><a href="OrgActivities.aspx">Activities</a></li>
+          <li><a href="Siddeswaridonate.aspx">Donate Now</a></li>
+          <li><a href="SwamijiLibrary.aspx">Books & Publications</a></li>
+          <li><a href="Contactus.aspx">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <h4>Contact</h4>
+        <p> 
+          <span class="brandcolor">Sri Siddheswari Seva Inc.,<br>
+8725 Colonial Place, 
+Duluth GA 30097, USA </span></p>
+        <p>For Purchase of Publications: <a href="mailto: bhushan@srisiddheswariseva.org"><span class="brandcolor">bhushan@srisiddheswariseva.org</span></a> </p>
+        <p>E-Mail Us: <a href="mailto: info@srisiddheswariseva.org"><span class="brandcolor">info@srisiddheswariseva.org</span></a> </p>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <p class="text-right margin-top-10 margin-bottom-20"><a href="#"><img src="images/facebook-ico.png"></a> <a href="#"><img src="images/twitter-ico.png"></a> <a href="#"><img src="images/linkedin-ico.png"></a> <a href="#"><img src="images/google-ico.png"></a></p>
+        <p class="text-right"><a href="#">Privacy Policy</a> | <a href="#">Terms</a> </p>
+        <p class="text-right">Copyright &copy; 2019 Reserved</p>
+        <p class="text-right">Developed and Maintained By <a href="http://www.syssigma.com/" target="_blank">SysSigma</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+jQuery(document).on('click', '.mega-dropdown', function(e) {
+  e.stopPropagation()
+})
+</script>
+       
+ </form>
+</body>
+</html>

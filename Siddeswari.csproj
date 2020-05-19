@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFB765EE-499F-4F99-8479-DE59439702E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Siddeswari</RootNamespace>
+    <AssemblyName>Siddeswari</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Aboutusaftlogin.aspx" />
+    <Content Include="AddToCart.aspx" />
+    <Content Include="AfteloginUSAIternary.aspx" />
+    <Content Include="AfterloginIndiaIternary.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Contactus.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\ionicons.css" />
+    <Content Include="css\ionicons.min.css" />
+    <Content Include="css\prettyCheckable.css" />
+    <Content Include="CustRegistration.aspx" />
+    <Content Include="DonateGuest.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="Eventsafterlogin.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\ionicons.svg" />
+    <Content Include="GalleryPictAftlogin.aspx" />
+    <Content Include="GalleryPictures.aspx" />
+    <Content Include="GalleryVidAftlogin.aspx" />
+    <Content Include="GalleryVideos.aspx" />
+    <Content Include="Guestcheckout.aspx" />
+    <Content Include="HomamPujaGuest.aspx" />
+    <Content Include="images\1-star.png" />
+    <Content Include="images\12a.png" />
+    <Content Include="images\2-star.png" />
+    <Content Include="images\3-star.png" />
+    <Content Include="images\4-star.png" />
+    <Content Include="images\5-star.png" />
+    <Content Include="images\80g.png" />
+    <Content Include="images\annadanam-oer-punitha-arppanippu-1050x574-300x164.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\Books\BrindavanaBhagavathamu.png" />
+    <Content Include="images\Books\BrindavanaYogulu.png" />
+    <Content Include="images\Books\CourtallaYogulu.png" />
+    <Content Include="images\Books\HimalayaSidhulathoMounaswami.png" />
+    <Content Include="images\Books\ManaSamasya.png" />
+    <Content Include="images\clouds_bg.jpg" />
+    <Content Include="images\elderly-men-29-01_2-620x360-1-300x169.jpg" />
+    <Content Include="images\facebook-ico.png" />
+    <Content Include="images\Gallery24.jpg" />
+    <Content Include="images\GalleryPict1.jpg" />
+    <Content Include="images\GalleryPict10.jpg" />
+    <Content Include="images\GalleryPict11.jpg" />
+    <Content Include="images\GalleryPict12.jpg" />
+    <Content Include="images\GalleryPict13.jpg" />
+    <Content Include="images\GalleryPict14.jpg" />
+    <Content Include="images\GalleryPict15.jpg" />
+    <Content Include="images\GalleryPict16.jpg" />
+    <Content Include="images\GalleryPict17.jpg" />
+    <Content Include="images\GalleryPict18.jpg" />
+    <Content Include="images\GalleryPict19.jpg" />
+    <Content Include="images\GalleryPict2.jpg" />
+    <Content Include="images\GalleryPict20.jpg" />
+    <Content Include="images\GalleryPict21.jpg" />
+    <Content Include="images\GalleryPict22.jpg" />
+    <Content Include="images\GalleryPict23.jpg" />
+    <Content Include="images\GalleryPict24.jpg" />
+    <Content Include="images\GalleryPict25.jpg" />
+    <Content Include="images\GalleryPict26.jpg" />
+    <Content Include="images\GalleryPict27.jpg" />
+    <Content Include="images\GalleryPict28.jpg" />
+    <Content Include="images\GalleryPict29.jpg" />
+    <Content Include="images\GalleryPict3.jpg" />
+    <Content Include="images\GalleryPict30.jpg" />
+    <Content Include="images\GalleryPict31.jpg" />
+    <Content Include="images\GalleryPict4.jpg" />
+    <Content Include="images\GalleryPict5.jpg" />
+    <Content Include="images\GalleryPict6.jpg" />
+    <Content Include="images\GalleryPict7.jpg" />
+    <Content Include="images\GalleryPict8.jpg" />
+    <Content Include="images\GalleryPict9.jpg" />
+    <Content Include="images\gallery_1.jpg" />
+    <Content Include="images\gallery_2.jpg" />
+    <Content Include="images\gallery_3.jpg" />
+    <Content Include="images\gallery_4.jpg" />
+    <Content Include="images\gallery_5.jpg" />
+    <Content Include="images\gallery_6.jpg" />
+    <Content Include="images\gallery_7.jpg" />
+    <Content Include="images\google-ico - Copy.png" />
+    <Content Include="images\google-ico.png" />
+    <Content Include="images\homam-and-yagnas-for-nri-500x500-1-300x169.jpg" />
+    <Content Include="images\img-7-640x360-300x169.jpg" />
+    <Content Include="images\inner-bg.png" />
+    <Content Include="images\inner_banner.jpg" />
+    <Content Include="images\Kadalee_Phala_Yagnam_Flyer-12May2019.jpg" />
+    <Content Include="images\linkedin-ico.png" />
+    <Content Include="images\Mataji.jpg" />
+    <Content Include="images\Naaga_Yagnam_Flyer-05June2019.jpg" />
+    <Content Include="images\shareiq_1354818282.904942-1024x768-1-300x169.jpg" />
+    <Content Include="images\social-icons.png" />
+    <Content Include="images\Sri_Sakthi_Peetham_Charitable_Trust_Logo.png" />
+    <Content Include="images\Sri_Siddheswari_Seva_Charitable_Trust_Logo - Copy.png" />
+    <Content Include="images\Sri_Siddheswari_Seva_Charitable_Trust_Logo.png" />
+    <Content Include="images\swamiji-img.jpg" />
+    <Content Include="images\Swamiji.jpg" />
+    <Content Include="images\swamijiimg.jpg" />
+    <Content Include="images\swamy5_28.png" />
+    <Content Include="images\twitter-ico.png" />
+    <Content Include="images\vara2-640x360-300x169.png" />
+    <Content Include="images\video_img_1.jpg" />
+    <Content Include="images\video_img_2.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\prettyCheckable-main.js" />
+    <Content Include="js\prettyCheckable.js" />
+    <Content Include="Libraryafterlogin.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="NormalCheckout.aspx" />
+    <Content Include="OrgActivities.aspx" />
+    <Content Include="OrgActivitiesaftlogin.aspx" />
+    <Content Include="Ourspiritualguru.aspx" />
+    <Content Include="paypal.aspx" />
+    <Content Include="Pictalbumaftlogin.aspx" />
+    <Content Include="PictureAlbum.aspx" />
+    <Content Include="ProductBookDetail.aspx" />
+    <Content Include="ProductBookDetailGuest.aspx" />
+    <Content Include="Productdetail.aspx" />
+    <Content Include="Productdetailgust.aspx" />
+    <Content Include="SiddeswariHome.aspx" />
+    <Content Include="source\helpers\fancybox_buttons.png" />
+    <Content Include="source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="source\helpers\jquery.fancybox-media.js" />
+    <Content Include="source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Success.aspx" />
+    <Content Include="SwamijiIndiaIternary.aspx" />
+    <Content Include="SwamyUSAItinerary.aspx" />
+    <Content Include="SchedulePujhomam.aspx" />
+    <Content Include="source\blank.gif" />
+    <Content Include="source\fancybox_loading%402x.gif" />
+    <Content Include="source\fancybox_loading.gif" />
+    <Content Include="source\fancybox_overlay.png" />
+    <Content Include="source\fancybox_sprite%402x.png" />
+    <Content Include="source\fancybox_sprite.png" />
+    <Content Include="source\jquery.fancybox.css" />
+    <Content Include="source\jquery.fancybox.js" />
+    <Content Include="source\jquery.fancybox.pack.js" />
+    <Content Include="SpiritualGuruBlgin.aspx" />
+    <Content Include="SwamijiLibrary.aspx" />
+    <Content Include="Siddeswariafterlogin.aspx" />
+    <Content Include="Siddeswaridonate.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aboutusaftlogin.aspx.cs">
+      <DependentUpon>Aboutusaftlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutusaftlogin.aspx.designer.cs">
+      <DependentUpon>Aboutusaftlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfteloginUSAIternary.aspx.cs">
+      <DependentUpon>AfteloginUSAIternary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfteloginUSAIternary.aspx.designer.cs">
+      <DependentUpon>AfteloginUSAIternary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfterloginIndiaIternary.aspx.cs">
+      <DependentUpon>AfterloginIndiaIternary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfterloginIndiaIternary.aspx.designer.cs">
+      <DependentUpon>AfterloginIndiaIternary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactus.aspx.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactus.aspx.designer.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustRegistration.aspx.cs">
+      <DependentUpon>CustRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustRegistration.aspx.designer.cs">
+      <DependentUpon>CustRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonateGuest.aspx.cs">
+      <DependentUpon>DonateGuest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonateGuest.aspx.designer.cs">
+      <DependentUpon>DonateGuest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eventsafterlogin.aspx.cs">
+      <DependentUpon>Eventsafterlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eventsafterlogin.aspx.designer.cs">
+      <DependentUpon>Eventsafterlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryPictAftlogin.aspx.cs">
+      <DependentUpon>GalleryPictAftlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryPictAftlogin.aspx.designer.cs">
+      <DependentUpon>GalleryPictAftlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryPictures.aspx.cs">
+      <DependentUpon>GalleryPictures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryPictures.aspx.designer.cs">
+      <DependentUpon>GalleryPictures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryVidAftlogin.aspx.cs">
+      <DependentUpon>GalleryVidAftlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryVidAftlogin.aspx.designer.cs">
+      <DependentUpon>GalleryVidAftlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryVideos.aspx.cs">
+      <DependentUpon>GalleryVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryVideos.aspx.designer.cs">
+      <DependentUpon>GalleryVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guestcheckout.aspx.cs">
+      <DependentUpon>Guestcheckout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guestcheckout.aspx.designer.cs">
+      <DependentUpon>Guestcheckout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomamPujaGuest.aspx.cs">
+      <DependentUpon>HomamPujaGuest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomamPujaGuest.aspx.designer.cs">
+      <DependentUpon>HomamPujaGuest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libraryafterlogin.aspx.cs">
+      <DependentUpon>Libraryafterlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libraryafterlogin.aspx.designer.cs">
+      <DependentUpon>Libraryafterlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Admin_Pictures_Add.cs" />
+    <Compile Include="Models\Siddeswari_Addtocart.cs" />
+    <Compile Include="Models\Siddeswari_Admin.cs" />
+    <Compile Include="Models\Siddeswari_Login.cs" />
+    <Compile Include="Models\Siddeswari_MasterCountry.cs" />
+    <Compile Include="Models\Siddeswari_Master_Address.cs" />
+    <Compile Include="Models\Siddeswari_Master_Books.cs" />
+    <Compile Include="Models\Siddeswari_Master_Country.cs" />
+    <Compile Include="Models\Siddeswari_Master_Customer.cs" />
+    <Compile Include="Models\Siddeswari_Master_Events.cs" />
+    <Compile Include="Models\Siddeswari_Master_Gallery_Pictures.cs" />
+    <Compile Include="Models\Siddeswari_Master_Gallery_Videos.cs" />
+    <Compile Include="Models\Siddeswari_Master_Org.cs" />
+    <Compile Include="Models\Siddeswari_Master_OrgContent.cs" />
+    <Compile Include="Models\Siddeswari_Master_OrgDonationScheme.cs" />
+    <Compile Include="Models\Siddeswari_Master_Puja.cs" />
+    <Compile Include="Models\Siddeswari_OrgDonate_Details.cs" />
+    <Compile Include="Models\Siddeswari_PujaSchd.cs" />
+    <Compile Include="Models\Siddeswari_Saletransactions.cs" />
+    <Compile Include="Models\Siddeswari_Sale_Books.cs" />
+    <Compile Include="Models\Srisiddeswari.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="NormalCheckout.aspx.cs">
+      <DependentUpon>NormalCheckout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NormalCheckout.aspx.designer.cs">
+      <DependentUpon>NormalCheckout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrgActivities.aspx.cs">
+      <DependentUpon>OrgActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrgActivities.aspx.designer.cs">
+      <DependentUpon>OrgActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrgActivitiesaftlogin.aspx.cs">
+      <DependentUpon>OrgActivitiesaftlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrgActivitiesaftlogin.aspx.designer.cs">
+      <DependentUpon>OrgActivitiesaftlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ourspiritualguru.aspx.cs">
+      <DependentUpon>Ourspiritualguru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ourspiritualguru.aspx.designer.cs">
+      <DependentUpon>Ourspiritualguru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paypal.aspx.cs">
+      <DependentUpon>paypal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paypal.aspx.designer.cs">
+      <DependentUpon>paypal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictalbumaftlogin.aspx.cs">
+      <DependentUpon>Pictalbumaftlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pictalbumaftlogin.aspx.designer.cs">
+      <DependentUpon>Pictalbumaftlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PictureAlbum.aspx.cs">
+      <DependentUpon>PictureAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PictureAlbum.aspx.designer.cs">
+      <DependentUpon>PictureAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductBookDetail.aspx.cs">
+      <DependentUpon>ProductBookDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductBookDetail.aspx.designer.cs">
+      <DependentUpon>ProductBookDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductBookDetailGuest.aspx.cs">
+      <DependentUpon>ProductBookDetailGuest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductBookDetailGuest.aspx.designer.cs">
+      <DependentUpon>ProductBookDetailGuest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productdetail.aspx.cs">
+      <DependentUpon>Productdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productdetail.aspx.designer.cs">
+      <DependentUpon>Productdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productdetailgust.aspx.cs">
+      <DependentUpon>Productdetailgust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productdetailgust.aspx.designer.cs">
+      <DependentUpon>Productdetailgust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiddeswariHome.aspx.cs">
+      <DependentUpon>SiddeswariHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiddeswariHome.aspx.designer.cs">
+      <DependentUpon>SiddeswariHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Success.aspx.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Success.aspx.designer.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwamijiIndiaIternary.aspx.cs">
+      <DependentUpon>SwamijiIndiaIternary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SwamijiIndiaIternary.aspx.designer.cs">
+      <DependentUpon>SwamijiIndiaIternary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwamyUSAItinerary.aspx.cs">
+      <DependentUpon>SwamyUSAItinerary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchedulePujhomam.aspx.cs">
+      <DependentUpon>SchedulePujhomam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchedulePujhomam.aspx.designer.cs">
+      <DependentUpon>SchedulePujhomam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Siddeswariafterlogin.Master.cs">
+      <DependentUpon>Siddeswariafterlogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siddeswariafterlogin.Master.designer.cs">
+      <DependentUpon>Siddeswariafterlogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Siddeswarinomenu.Master.cs">
+      <DependentUpon>Siddeswarinomenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siddeswarinomenu.Master.designer.cs">
+      <DependentUpon>Siddeswarinomenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SpiritualGuruBlgin.aspx.cs">
+      <DependentUpon>SpiritualGuruBlgin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpiritualGuruBlgin.aspx.designer.cs">
+      <DependentUpon>SpiritualGuruBlgin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwamijiLibrary.aspx.cs">
+      <DependentUpon>SwamijiLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SwamijiLibrary.aspx.designer.cs">
+      <DependentUpon>SwamijiLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siddeswari.Master.cs">
+      <DependentUpon>Siddeswari.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siddeswari.Master.designer.cs">
+      <DependentUpon>Siddeswari.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Siddeswariafterlogin.aspx.cs">
+      <DependentUpon>Siddeswariafterlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siddeswariafterlogin.aspx.designer.cs">
+      <DependentUpon>Siddeswariafterlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Siddeswaridonate.aspx.cs">
+      <DependentUpon>Siddeswaridonate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siddeswaridonate.aspx.designer.cs">
+      <DependentUpon>Siddeswaridonate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwamyUSAItinerary.aspx.designer.cs">
+      <DependentUpon>SwamyUSAItinerary.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\ionicons.eot" />
+    <Content Include="fonts\ionicons.ttf" />
+    <Content Include="fonts\ionicons.woff" />
+    <None Include="packages.config" />
+    <Content Include="Siddeswari.Master" />
+    <Content Include="Siddeswariafterlogin.Master" />
+    <Content Include="Siddeswarinomenu.Master" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile2.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="images\Carousel\" />
+    <Folder Include="images\GallPictures\" />
+    <Folder Include="images\GallVideos\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65114</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65114/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:65114/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
